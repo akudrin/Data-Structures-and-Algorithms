@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class GenericDemoUse {
 
@@ -6,7 +7,7 @@ public class GenericDemoUse {
 		GenericDemo demo = new GenericDemo();
 		String[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
 		demo.reverse(cars);
-		System.out.println(cars[0]);
+		System.out.println(Arrays.toString(cars));
 	}
 
 }
