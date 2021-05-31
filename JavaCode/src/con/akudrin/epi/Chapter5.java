@@ -28,7 +28,18 @@ public class Chapter5 {
 		System.out.println(Math.pow(2.71, 3.14));
 
 		// interconvert integer
-		System.out.println(Character.getNumericValue('n'));
+		System.out.println(Character.getNumericValue('\uFF21'));
+		char c = 'A';
+		System.out.println();
+		int value = (int) c;
+
+		System.out.println(value);
+
+		System.out.println('\u04FC');
+		System.out.println('\u6771');
+		System.out.println('\u1040');
+		System.out.println('\uD801');
+
 	}
 
 }
