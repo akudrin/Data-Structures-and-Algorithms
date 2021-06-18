@@ -96,4 +96,38 @@ public class LinkedList<E> {
 
 	}
 
+	public E remove(E obj) {
+		Node<E> current = head, previous = null;
+		while (current != null) {
+			if (((Comparable<E>) obj).compareTo(current.data) == 0) {
+
+				if (current == head) {
+					return removeFirst();
+				}
+				if (current == tail) {
+					return removeLast();
+				}
+				currentSize--;
+				previous.next = current.next;
+				return current.data;
+			}
+			previous = current;
+			current = current.next;
+		}
+		return null;
+	}
+
+	public boolean contains(E obj) {
+		Node<E> current = head;
+		while (current != null) {
+			if (((Comparable<E>) obj).compareTo(current.data) == 0) {
+
+				return true;
+			}
+			current = current.next;
+		}
+		return false;
+
+	}
+
 }
