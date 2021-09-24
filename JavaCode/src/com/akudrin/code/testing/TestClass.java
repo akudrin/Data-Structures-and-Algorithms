@@ -15,7 +15,7 @@ public class TestClass {
 		char c = 'A';
 		System.out.println(a - c);
 
-		System.out.println('T' - 'A');
+		System.out.println('W' - 'A');
 
 		System.out.println(23 % 26);
 	}
