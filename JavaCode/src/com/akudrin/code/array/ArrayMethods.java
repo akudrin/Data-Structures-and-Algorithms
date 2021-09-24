@@ -12,6 +12,8 @@ public class ArrayMethods {
 		int[] arr2 = new int[10];
 		Arrays.fill(arr2, 20);
 
+		System.out.println(Arrays.toString(arr2));
+
 		System.out.println("Compare two arrays as objects " + arr1.equals(arr2));
 
 		System.out.println("Compare arrays for content " + Arrays.equals(arr1, arr2));

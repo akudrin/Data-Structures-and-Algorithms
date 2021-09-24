@@ -1,24 +1,23 @@
 package com.akudrin.code.testing;
 
-import java.util.Random;
-
 public class TestClass {
 
-	private static int getPivot(int low, int high) {
-		Random rand = new Random();
-		return rand.nextInt((high - low) + 1) + low;
-	}
-
 	public static void main(String[] args) {
+		String s = "Hello";
+		s = "Bye";
+		System.out.println(s);
 
-		Random rand = new Random();
-		// System.out.println(rand.nextInt(2));
+		String NewString = "Hello";
+		NewString.concat("World");
+		System.out.println(NewString);
 
-		int border = 1;
-		// System.out.println(border++);
+		char a = 'Z';
+		char c = 'A';
+		System.out.println(a - c);
 
-		System.out.println(getPivot(4, 4));
+		System.out.println('T' - 'A');
 
+		System.out.println(23 % 26);
 	}
 
 }
